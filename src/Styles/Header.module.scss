@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import "font";
+@import "variables";
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 37px 0;
+}
+
+.leftIcons {
+  display: flex;
+  list-style: none;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    color: $GreenPrimary;
+    background-color: $GreenTint;
+    padding: 5px;
+    margin-right: 8px;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $GrayText;
+    margin: 0 25px;
+    font-family: 'estedadRegular';
+    font-size: 20px;
+    cursor: pointer;
+  }
+  li:first-child {
+    color: $GreenPrimary;
+    font-family: 'estedadBold';
+
+    border-bottom: 1px solid $GreenPrimary;
+  }
+}
