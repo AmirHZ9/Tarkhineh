@@ -1,0 +1,46 @@
+@import "colors";
+@import "font";
+
+.title{
+    text-align: center;
+    font-family: 'estedadBold';
+    font-size: 24px;
+    margin-top: 48px ;
+    margin-bottom: 153px;
+    color: $blackText;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    li{
+        position: relative;
+        border: 1px solid $GreenPrimary;
+        width: 287px;
+        height: 188px;
+        margin: 90px 50px ;
+
+
+    }
+    img{
+        position: absolute;
+        left: 22px;
+        top: -121px;
+    }
+    button{
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        padding: 8px 16px ;
+        color: white;
+        background-color: $GreenPrimary;
+        font-family: 'estedadRegular';
+        font-size: 20px;
+    }
+}
