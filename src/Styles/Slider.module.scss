@@ -1,0 +1,78 @@
+@import "font";
+@import "colors";
+.slider {
+  position: relative;
+  height: 336px;
+
+  img {
+    height: 336px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+}
+.text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 10;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+
+  button {
+    font-size: 16px;
+    text-align: center;
+    font-family: "estedadM";
+    padding: 5.5px 32px;
+    border-radius: 8px;
+    background-color: $GreenPrimary;
+    outline: none;
+    border: none;
+    color: white;
+    margin-top: 20px;
+  }
+}
+.mainText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  font-family: "estedadBold";
+  font-size: 40px;
+}
+.sliderIndexMain {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  text-align: center;
+ left: 50%;
+ transform: translate(-50%);
+  .sliderIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: white;
+    padding:11px 20px ;
+    border-radius: 15px 15px 0 0;
+}
+li {
+  margin: 0 4px;
+  border-radius: 50%;
+  background-color: $Gray;
+  width: 8px;
+  height: 8px;
+}
+li:first-child{
+    background-color: $GreenPrimary;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $GreenTint;
+}
+}

@@ -1,7 +1,7 @@
 import React from 'react'
-
+import styles from "../Styles/desktopMain.module.scss"
 export default function DesktopMainPage() {
   return (
-    <div>DesktopMainPage</div>
+    <div className={styles.main}>DesktopMainPage</div>
   )
 }

@@ -25,7 +25,9 @@ export default function Header() {
             <li><Person/></li>
         </ul>
     </div>
-
+    <div>
+        
+    </div>
     </header>
   )
 }
